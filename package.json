@@ -1,0 +1,22 @@
+{
+  "name": "shgchain-bc02",
+  "version": "1.0.0",
+  "description": "BC-02 Transparent Crowdfunding Platform for Rural Self-Help Groups with On-Chain Fund Tracking",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:amoy": "npx hardhat run scripts/deploy.js --network amoy",
+    "verify": "npx hardhat verify --network amoy",
+    "frontend": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
